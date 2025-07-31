@@ -64,9 +64,18 @@ main{
     font-size: larger;
     padding: 20px 45px 20px 20px;
 }
-.loginbox input::placeholder{
+.loginbox label{
     color:rgb(179, 255, 0) ;
     font-size: large;
+    position: absolute;
+    top:30%;
+    left:40px;
+    /*transform: translate(-290px,-50%);*/
+    transition:1s ease ;
+}
+.loginbox input:focus~label,
+.loginbox input:valid~label{
+  top: -20px;
 }
 .loginbox i{
     position: absolute;
