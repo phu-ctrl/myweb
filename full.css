@@ -1,0 +1,94 @@
+.page{
+    text-align: center;
+}
+.page a{
+    text-decoration: none;
+    padding: 3px 10px;
+    margin: 5px;
+    font-size: x-large;
+    border-radius:10px ;
+}
+.page a:hover{
+    font-weight: bolder;
+    transition: background-color 1s ease, box-shadow 2s ease;
+}
+.page a.tc{
+    font-size: xx-large;
+}
+.menu button{
+    font-size: larger;
+}
+.menu button:hover{
+    font-weight:bolder;
+    transition: background-color 1s ease, box-shadow 2s ease;
+}
+footer{
+    text-align: center;
+    font-size: x-large;
+}
+.menu{
+    display: inline-block; /* Giới hạn vùng ảnh hưởng của div lại thành vị trí của button */
+}
+.menu button{
+    padding:10px 15px;
+    width: 150px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer; /* Thiết lập con trỏ khi rê chuột đến vùng này */
+}
+.menup a{
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    display: block;
+    font-size: larger;
+    padding:10px 30px;
+    text-decoration: none;
+}
+.menup{
+    background-color: rgba(106, 114, 121, 0.664);
+    position: absolute;
+    border-radius: 5px;
+    min-width: 200px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.589);
+    display: none;
+    margin:1px;
+}
+.menu:hover .menup{
+    display: block;
+}
+.menup a:hover{
+    font-weight: bolder;
+}
+.icons{
+    padding:20px;
+    background-color: rgba(240, 248, 255, 0.411);
+    margin-bottom: 5px ;
+}
+.icons i{
+    margin:20px;
+}
+.fa-brands.fa-facebook.fa-xl{
+    color:rgb(10, 73, 167)
+}
+.fa-brands.fa-github.fa-xl{
+    color:rgb(31, 27, 27)
+}
+.fa-brands.fa-reddit.fa-xl{
+    color:rgb(230, 103, 0)
+}
+.fa-brands.fa-pinterest.fa-xl{
+    color:rgb(230, 11, 11)
+}
+.fa-brands.fa-facebook.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-github.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-reddit.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-pinterest.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}

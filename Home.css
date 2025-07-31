@@ -1,0 +1,179 @@
+#Home{
+    color:#ce7208de;
+    border:3px solid rgba(37, 12, 12, 0.411);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    text-shadow: 2px 2px 3px red;
+}
+#Home::after{content:" 🌘 "}
+#Home::before{content:" 🌖 "}
+#bh{
+    background-color: #0833728e;
+    color: rgba(255, 255, 255, 0.555);
+    box-shadow: 4px 4px 4px rgba(4, 98, 185, 0.575), -4px -4px 4px rgba(139, 133, 139, 0.445);
+}
+.website{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+#web{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(229, 255, 0);
+    border-radius: 20px;
+    border: 2px solid grey;
+    padding: 5px;
+    background-color: rgba(240, 248, 255, 0.349);
+    text-decoration: none;
+}
+#web:hover{
+    color: rgba(26, 21, 21, 0.705);
+    background-color: rgba(243, 94, 8, 0.575);
+    box-shadow: 0 0 10px red;
+    font-weight: bolder;
+    transition: background-color 1s ease, color 2s ease, box-shadow 2s ease, font-weight 1.5s ease;
+}
+#bh:hover{
+    background-color: #da580da9;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.644),-4px -4px 4px orange;
+}
+.menu a{
+    background-color:#0833728e;
+    color:rgba(255, 255, 255, 0.555);
+}
+.menup a:hover{
+    background-color: #da580da9;
+    font-weight: bolder;
+}
+.menup a.tc{
+    background-color: rgba(240, 165, 5, 0.856);
+    color: rgba(33, 36, 39, 0.781);
+}
+#pageh a{
+    background-color: #0833728e;
+    color: rgba(255, 255, 255, 0.555);
+    box-shadow: 4px 4px 4px rgba(4, 98, 185, 0.575), -4px -4px 4px rgba(139, 133, 139, 0.445);
+}
+footer{
+    color:rgba(255, 255, 255, 0.897);
+}
+footer a{
+    text-decoration: none;
+    color: rgba(0, 235, 59, 0.945);
+}
+footer a:hover{
+    text-decoration: none;
+    color: rgba(255, 32, 2, 0.945);
+}
+#pageh a:hover{
+    background-color: #da580da9;
+    box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.644),-4px -4px 4px orange;
+    font-weight: bold;
+}
+#pageh a.tc{
+    background-color: rgba(240, 165, 5, 0.856);
+    color: rgba(33, 36, 39, 0.781);
+    box-shadow: 4px 4px 4px rgba(173, 7, 7, 0.623),-4px -4px 4px rgba(219, 145, 7, 0.836);
+}
+#home{
+    background-image: url(PICTURE/login1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+body{
+    background-image: url(PICTURE/login.jpg);
+    background-position: center;
+}
+#login h2{
+    margin: 0;
+    color: rgb(247, 58, 0);
+    padding: 5px;
+}
+#login{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+#login div{
+    border-radius: 10px;
+    background-color: rgba(102, 99, 99, 0.555);
+    backdrop-filter: blur(5px);
+    width: 300px;
+    padding:10px;
+    text-align: center;
+}
+#login form{
+    display: flex;
+    flex-direction: column;
+}
+#login input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(141, 139, 139, 0.486);
+}
+#login input::placeholder{
+    color: rgb(17, 18, 19);
+}
+#login button{
+    width: 200px;
+    padding:5px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgba(141, 139, 139, 0.486);
+}
+#login a{
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 240, 60, 0.459);
+}
+#login button:hover{
+    background-color: rgba(10, 150, 68, 0.5);
+    color: rgba(228, 3, 3, 0.808);
+    font-size: larger;
+    font-weight: bold;
+}
+#login a:hover{
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+.icons{
+    padding:20px;
+    background-color: rgba(240, 248, 255, 0.411);
+    margin-bottom: 5px ;
+}
+.icons i{
+    margin:20px;
+}
+.fa-brands.fa-facebook.fa-xl{
+    color:rgb(10, 73, 167)
+}
+.fa-brands.fa-github.fa-xl{
+    color:rgb(31, 27, 27)
+}
+.fa-brands.fa-reddit.fa-xl{
+    color:rgb(230, 103, 0)
+}
+.fa-brands.fa-pinterest.fa-xl{
+    color:rgb(230, 11, 11)
+}
+.fa-brands.fa-facebook.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-github.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-reddit.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-pinterest.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}

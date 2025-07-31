@@ -1,0 +1,89 @@
+#VeSaFre{
+    background-image: url(PICTURE/VeSaFre.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-attachment: fixed;
+}
+footer{
+    color:rgba(13, 90, 58, 0.61);
+}
+#VSFh h1{
+    color: rgba(7, 3, 3, 0.5);
+    text-align: center;
+    background-color: #046b335b;
+    border-radius: 10px;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+}
+#VSFh h1 a{
+    text-decoration: none;
+    color: rgb(7, 182, 109);
+}
+#VSFp a{
+    background-color: #046b335b;
+    color:rgba(13, 90, 58, 0.61) ;
+    box-shadow: 4px 4px 4px rgb(104, 190, 4),-4px -4px 4px rgb(4, 133, 4);
+}
+#VSFp a:hover{
+    background-color: rgb(204, 250, 0);
+    color:black;
+    font-weight: bold;
+}
+#VSFp a.tc{
+    background-color: #90da06c2;
+    color: aliceblue;
+    box-shadow: 4px 4px 4px rgba(68, 68, 73, 0.555),-4px -4px 4px rgb(115, 138, 34);
+    font-size: xx-large;
+}
+.menu button{
+    background-color: #046b335b;
+    color:rgba(13, 90, 58, 0.61) ;
+    box-shadow: 4px 4px 4px rgb(104, 190, 4),-4px -4px 4px rgb(4, 133, 4);
+}
+.menu button:hover{
+    background-color: rgb(204, 250, 0);
+    color:black;
+}
+.menup a{
+    background-color: #046b335b;
+    color:rgba(13, 90, 58, 0.61) ;
+}
+.menup a:hover{
+    background-color: rgb(204, 250, 0);
+    color:black;
+    font-weight: bold;
+}
+.menup a.tc{
+    background-color: #90da06c2;
+    color: aliceblue;
+}
+#mau{
+    text-align: center;
+    align-items: center;
+    margin-left:40%;
+    margin-right:40%;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size: large;
+    justify-content: center;
+    background-color: rgba(169, 182, 194, 0.473);
+    display: flex;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+#mau input{
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(90, 86, 86, 0.514);
+}
+#mau ::placeholder{
+    color: rgba(122, 219, 10, 0.788);
+}
+#mau option{
+    color: rgba(15, 126, 21, 0.575);
+}
+#mau #note{
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(116, 111, 106, 0.651);
+}

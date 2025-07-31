@@ -1,0 +1,57 @@
+body{
+    background-image: url(PICTURE/3da06a7b1df0e3c04272bb7533d7d851.jpg);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(226, 205, 13);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#title{
+    text-align: center;
+    background-color: rgba(9, 78, 55, 0.445);
+    border-radius: 10px;
+    padding:5px;
+    color:rgba(10, 170, 58, 0.863);
+}
+footer{
+    color:rgb(9, 255, 0);
+}
+.page a{
+    background-color: rgba(13, 75, 110, 0.651);
+    color:rgba(10, 160, 48, 0.712);
+    box-shadow: 4px 4px 6px rgba(3, 175, 89, 0.61),-4px -4px 6px rgba(8, 8, 194, 0.733);
+}
+.page a:hover{
+    background-color: rgba(86, 134, 105, 0.507);
+    color:rgba(7, 214, 25, 0.767);
+    box-shadow: 4px 4px 6px rgba(19, 223, 0, 0.61),-4px -4px 6px rgba(11, 255, 182, 0.548);   
+}
+.page a.tc{
+    background-color: rgba(83, 230, 46, 0.705);
+    color:rgba(19, 66, 221, 0.842);
+    box-shadow: 4px 4px 6px rgba(6, 214, 162, 0.685),-4px -4px 6px rgba(207, 211, 4, 0.658);
+}
+.menu button{
+    background-color: rgba(13, 75, 110, 0.651);
+    color:rgba(10, 160, 48, 0.712);
+    box-shadow: 4px 4px 6px rgba(3, 175, 89, 0.61),-4px -4px 6px rgba(8, 8, 194, 0.733);
+}
+.menu button:hover{
+    background-color: rgba(86, 134, 105, 0.507);
+    color:rgba(7, 214, 25, 0.767);
+    box-shadow: 4px 4px 6px rgba(19, 223, 0, 0.61),-4px -4px 6px rgba(11, 255, 182, 0.548);  
+}
+.menup a{
+    background-color: rgba(13, 75, 110, 0.651);
+    color:rgba(10, 160, 48, 0.712);
+}
+.menup a:hover{
+    background-color: rgba(86, 134, 105, 0.507);
+    color:rgba(7, 214, 25, 0.767);
+}
+.menup a.tc{
+    background-color: rgba(83, 230, 46, 0.705);
+    color:rgba(19, 66, 221, 0.842);
+}

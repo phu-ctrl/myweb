@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VSF Coin</title>
+        <link href="PICTURE/okl.jpg" rel="icon">
+        <!--
+        <link href="full.css" rel="stylesheet">
+        <link href="2.css" rel="stylesheet">
+        -->
+        <link href="full.css" rel="stylesheet">
+        <link href="VSFCoin.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/54b0836964.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="Coin">
+    <header>
+        <h1 id="title">Chào mừng đến với VSF Coin</h1>
+        <div class="menu">
+            <button>Menu Page</button>
+            <div class="menup">
+                <a href="index.html">Home</a>
+                <a href="VeSaFre.html" >VeSaFre</a>
+                <a href="VSFCoin.html"  class="tc">VSF Coin</a>
+                <a href="VeScoFre.html">VeScoFre</a>
+                <a href="CoreOfVSF.html">Core of VSF</a>
+                <a href="Learn.html">Learn</a>
+            </div>
+        </div>
+        <div class="page" id="pC">
+           <a href="VeSaFre.html"><<</a>
+           <a href="index.html">Home</a>
+           <a href="VeSaFre.html">VeSaFre</a>
+           <a href="VSFCoin.html"  class="tc">VSF Coin</a>
+           <a href="VeScoFre.html">VeScoFre</a>
+           <a href="CoreOfVSF.html">Core of VSF</a>
+           <a href="Learn.html">Learn</a>
+           <a href="VeScoFre.html">>></a>
+        </div><br><hr>
+    </header>
+    <main id="Coinmain">   
+        <pre id="Cmain">
+        <p id="tieude">VSF Coin – Giới Thiệu, Chức Năng & Cơ Chế Sử Dụng</p>
+<div class="nut"><button><h2 class="stt">1.Giới Thiệu</h2></button>
+<p class="nd">Token gốc ERC-20 (Ethereum) + bridge BSC/Polygon
+Symbol: VSF, Decimals: 18, Max Supply: 1 000 000 000 VSF
+Upgradeable contract (OpenZeppelin proxy), gasless via Biconomy</p></div>
+
+<div class="nut"><button><h2 class="stt">2.Chức Năng Chính</h2></button>
+<p class="nd">Reward Creator: qua Up Trend (donate), DaMark, DMv
+Governance: vote DAO Dispute, proposal roadmap khi stake veVSF
+Staking & veVSF: khóa token nhận veVSF, tăng weight vote & boost reward
+Transaction Fee: 1.35% từ donate, đóng góp thêm vào treasury
+Incentive Programs: airdrop, referral, bug bounty paid by VSF
+NFT & Badges: mint badge kỷ niệm khi donate/participate đạt milestone</p></div>
+
+<div class="nut"><button><h2 class="stt">3.Cơ Chế Sử Dụng</h2></button>
+<p class="nd">Donate: user trích VSF → smart contract chia 55%/43.65%/1.35%
+Reward Data: DaMark session & DMv session mint VSF ngay khi kết thúc
+Stake: user stake VSF → nhận veVSF, unlock sau khóa, dùng cho governance
+Governance: veVSF holder khởi & vote proposal, weight = veVSF balance
+Payment & Tipping: user có thể tip VSF trực tiếp cho bài viết, comment
+Quá Trình Tạo & Phát Triển VSF Coin</p></div>
+
+<h3 style="text-align: center;">VSF Coin là token gốc của VeSaFre, giữ vai trò trung tâm cho mọi hoạt động: reward creator, donator, governance và staking.<br> 
+Dưới đây là lộ trình chi tiết từ ý tưởng đến triển khai, bảo mật và phát triển lâu dài.</h3>
+<pre id="focus">
+<button id="red">Tầm Nhìn & Mục Tiêu</button>
+Trao quyền tài chính cho creator thông qua cơ chế donate (UP Trend).
+Xây dựng nền kinh tế nội dung giảm phát, khuyến khích giữ và stake token.
+Cung cấp quyền biểu quyết trong DAO Dispute và roadmap VeSaFre.
+Huy động và phân bổ vốn để phát triển features, grant chương trình hackathon.
+<button id="red">Thiết Kế Tokenomics</button>
+<table border="3">
+    <tr>
+        <th class="th1">Hạng mục</th>
+        <th class="th2">VSF Coin</th>
+    </tr>
+     <tr>
+        <th class="th1">Chuẩn giao thức</th>
+        <th class="th2">ERC-20 (Etdereum) + BSC, Polygon bridge	</th>
+    </tr>
+     <tr>
+        <th class="th1">Tên token</th>
+        <th class="th2">VeSaFre Token	</th>
+    </tr>
+     <tr>
+        <th class="th1">Kí hiệu</th>
+        <th class="th2">VSF</th>
+    </tr>
+     <tr>
+        <th class="th1">Decimals</th>
+        <th class="th2">18</th>
+    </tr>
+     <tr>
+        <th class="th1">Tổng cung</th>
+        <th class="th2">1,000,000,000 VSF</th>
+    </tr>
+     <tr>
+        <th class="th1">Mint schdule</th>
+        <th class="th2">0.05% tổng supply/ngày cho reward pool</th>
+    </tr>
+     <tr>
+        <th class="th1">Deflationary model</th>
+        <th class="th2"> Burn 43.65% donate, fee 1.35% cho treasury </th>
+    </tr>
+     <tr>
+        <th class="th1">Vesting team & advisor</th>
+        <th class="th2"> 2 năm cliff + 12 tháng vesting tuyến tính </th>
+    </tr>
+</table>
+<button id="red">Smart Contract Kiến Trúc</button>
+<table border="3">
+    <tr>
+        <th class="th1" >Proxy Pattern</th>
+        <th class="th2" > Dùng OpenZeppelin Upgradeable Contracts để dễ thêm logic mới mà không mất state. </th>
+    </tr>
+    <tr>
+        <th class="th1">Core Functions</th>
+        <th class="th2">mint(address to, uint256 amount) (onlyRewardPool)
+burn(uint256 amount) (public)
+transfer(address to, uint256 amount) override fee/burn logic</th>
+    </tr>
+    <tr>
+        <th class="th1">Events</th>
+        <th class="th2">Transfer, Mint, Burn, Donate (from UP Trend), Stake, Unstake</th>
+    </tr>
+    <tr>
+        <th class="th1">Security</th>
+        <th class="th2">Audit bởi bên thứ ba (MythX, CertiK). </th>
+    </tr>
+</table>
+<button id="red">Phân Phối & Vesting</button>
+<table border="3">
+    <tr>
+        <th class="th1">Nhóm</th>
+        <th class="th1">Tỷ lệ</th>
+        <th class="th1">Vesting</th>
+    </tr>
+    <tr>
+        <th class="th2">Cộng đồng & Rewards</th>
+        <th class="th2">50%</th>
+        <th class="th2">Mint 0.05%/ngày, unlock theo block</th>
+    </tr>
+        <tr>
+        <th class="th2">Liquidity & Listing</th>
+        <th class="th2">15%</th>
+        <th class="th2">6 tháng cliff, release 6 tháng tiếp</th>
+    </tr>
+        <tr>
+        <th class="th2">Team & Advisors</th>
+        <th class="th2">15%</th>
+        <th class="th2">24 tháng cliff, 12 tháng linear vest</th>
+    </tr>
+        <tr>
+        <th class="th2">Treasury & Grants</th>
+        <th class="th2">10%</th>
+        <th class="th2">Dùng cho grant, hackathon, partnership</th>
+    </tr>
+        <tr>
+        <th class="th2">Investors & Partners</th>
+        <th class="th2">10%</th>
+        <th class="th2">12 tháng cliff, 6 tháng linear vest</th>
+    </tr>
+</table>
+<button id="red">Triển Khai & Listing</button>
+Testnet (Ropsten/Rinkeby): deploy initial ERC-20, test donate, stake, governance flows.
+Mainnet Ethereum: deploy core contracts, bridge sang BSC/Polygon qua Wormhole.
+Liquidity provision: tạo pool VSF/USDC trên Uniswap V2, PancakeSwap, QuickSwap.
+CEX Listing: thỏa thuận để niêm yết VSF trên các sàn tập trung (Gate.io, MEXC).
+<button id="red">Ứng Dụng Token</button>
+Donate (UP Trend): user donate → trigger burn & fee logic → reward creator.
+Staking & veVSF: khóa token 3–12 tháng để nhận veVSF, gia tăng weight vote DAO và boost reward.
+Governance: veVSF holder khởi proposal, vote trên DAO Dispute & roadmap.
+Incentive Programs: airdrop, referral, bug bounty trả bằng VSF.
+<button id="red">Kế Hoạch Bảo Mật & Audit</button>
+Audit hợp đồng: phối hợp CertiK và OpenZeppelin.
+Bug Bounty: thưởng VSF cao cho phát hiện lỗ hổng.
+Monitoring on-chain: dashboard Etherscan, BscScan analytics.
+Multi-sig treasury: 3/5 signatures cho chuyển quỹ.
+<button id="red">Roadmap Phát Triển</button>
+Q3 2025:
+Ra mắt staking veVSF, cross-chain bridge.
+Mở bán seed & private round cho đối tác chiến lược.
+Q4 2025:
+Launch DAO treasury voting module.
+Mở rộng liquidity trên AMM CEX.
+2026:
+VSF hợp nhất trên Layer 2 (Arbitrum, Optimism) để giảm phí.
+Kết hợp ZKP cho mint/burn privacy.
+VSF Liquid Staking Derivatives (LSD) – tạo vsfETH.
+<button id="red"> Thách Thức & Cần Giải Quyết</button>
+Lạm phát nhỏ giọt: điều chỉnh rate mint để tránh áp lực supply tăng.
+Quản lý thanh khoản: tránh slippage trên pool nhỏ.
+Tuân thủ pháp lý: KYC/AML cho major holders, tư vấn luật đa vùng.
+Tối ưu UX: ẩn độ phức tạp blockchain, gasless mint/burn.
+Với quy trình này, VSF Coin sẽ phát triển thành một token bền vững, minh bạch và vững mạnh,
+ làm nền cho mọi hoạt động kinh tế và cộng đồng của VeSaFre.
+</pre>
+    </main> 
+    <hr>
+    <footer>
+        <div class="icons">
+        <a href="https://www.facebook.com/hphu0208" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+        <a href="https://github.com/phu-ctrl" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        <a href="https://www.reddit.com/user/Glad-Light-2920/" target="_blank"><i class="fa-brands fa-reddit fa-xl"></i></a>
+        <a href="https://www.pinterest.com/nq19chauhoangphu020804/_profile/" target="_blank"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+        </div>
+        author: Châu Hoàng Phú<br>
+        22/7/2025 (Việt Nam)<br>
+        &copy; copyright reserved<br>
+        <a href="mailto:nq19.chauhoangphu020804@gmail.com">nq19.chauhoangphu020804@gmail.com</a>
+    </footer>
+    </body>
+</html>

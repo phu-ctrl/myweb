@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(PICTURE/3da06a7b1df0e3c04272bb7533d7d851.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    font-size: 30px;
+    color: #cdd37d;
+    display:flex;
+    justify-content: center;
+    height:10vh;
+    font-size: 5vh;
+    margin-bottom: 40px;
+}
+header p{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(172, 255, 47, 0.192);
+    font-size: larger;
+
+}
+header p::first-letter{
+    color: rgba(9, 131, 15, 0.966);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.VSF{
+    /*background-color: aqua;*/
+    background: transparent;
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid #87e03e5e;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 8px greenyellow;
+}
+.login h1{
+    text-align: center;
+    color: #cdd37d;
+}
+.VSF .loginbox{
+    position: relative;
+    width:100%;
+    height: 50px;
+    margin: 30px 0 ;
+}
+.loginbox input{
+    color: rgba(109, 216, 9, 0.486);
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 40px;
+    font-size: larger;
+    padding: 20px 45px 20px 20px;
+}
+.loginbox input::placeholder{
+    color:rgb(179, 255, 0) ;
+    font-size: large;
+}
+.loginbox i{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    display: flex;
+    transform: translateY(-50%);
+    font-size: large;
+    color: rgb(179, 255, 0);
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin:-15px 0 15px ;
+}
+.remember-forgot .check input{
+    accent-color: #fff;
+}
+.remember-forgot a{
+    color: rgba(204, 203, 209, 0.842);
+    text-decoration: none;
+    margin-right: 5px;
+}
+.remember-forgot a:hover{
+    color: rgb(179, 255, 0);
+    text-decoration: underline;
+    margin-right: 5px;
+}
+.VSF button{
+    width: 100%;
+    height:40px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    background-color: #33b60bb2;
+    color:#eaf822ef ;
+    cursor: pointer;
+    font-size: larger;
+}
+.VSF button:hover{
+    background-color:rgb(16, 110, 197); 
+    color: #fff;
+}
+.creat p{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.creat a{
+    color: rgba(204, 203, 209, 0.842);
+    text-decoration: none;
+}
+.creat a:hover{
+    color: rgb(179, 255, 0);
+    text-decoration: underline;
+}
+footer{
+    text-align: center;
+    font-size: x-large;
+    color:rgb(179, 255, 0);
+    margin:3px;
+}
+.icons{
+    padding:20px;
+    background-color: rgba(240, 248, 255, 0.411);
+    margin-bottom: 5px ;
+}
+.icons i{
+    margin:20px;
+}
+.fa-brands.fa-facebook.fa-xl{
+    color:rgb(10, 73, 167)
+}
+.fa-brands.fa-github.fa-xl{
+    color:rgb(31, 27, 27)
+}
+.fa-brands.fa-reddit.fa-xl{
+    color:rgb(230, 103, 0)
+}
+.fa-brands.fa-pinterest.fa-xl{
+    color:rgb(230, 11, 11)
+}
+.fa-brands.fa-facebook.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-github.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-reddit.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}
+.fa-brands.fa-pinterest.fa-xl:hover{
+    color:hsl(108, 100%, 44%)
+}

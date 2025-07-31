@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestCSS</title>
+    <link href="test.css" rel="stylesheet">
+</head>
+<body>
+<header></header>
+    <!--
+    <div id="grandparent">
+        <p>This is #1</p>
+        <div>
+            <p>This is #2</p>
+        </div>
+        <p>This is #3</p>
+    </div>
+        <p>This is #4</p>
+    <div>
+        <p>This is #5</p>
+    </div>
+    -->
+<main>
+    <div id="kop" class="op">
+    <img src="PICTURE/B.png" height="150px" id="logo">
+<p> Đây là quy trình DAO Dispute mới, cho phép mọi user report bất cứ khi nào nội dung còn tồn tại, với thời hạn xử lý khác nhau
+<br>1. Report Phase – Báo Cáo Linh Hoạt
+Không giới hạn thời gian report đối với các bài vĩnh viễn: user có thể report bất cứ lúc nào nội dung còn tồn tại.
+Bài tồn tại 24h chỉ được report trong thời gian 24 giờ kể từ khi đăng.
+Khi user nhấn Report, hệ thống ghi nhận ngay “report pending” và chuyển sang bước Triage
+2. Triage Phase – Xác Thực Báo Cáo (≤ 1h)
+Auto-filter (AI + rule-based) trong tối đa 1 giờ:
+Loại bỏ spam, duplicate, báo cáo không hợp lệ.
+Nếu invalid → thông báo user, kết thúc.
+Nếu valid → chuyển sang Dispute Phase.
+3. Dispute Phase – Thảo Luận & Bỏ Phiếu
+3.1 Khởi Động Phiên Dispute
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Disc
+ussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+Nếu valid → chuyển sang Dispute Phase.
+3. Dispute Phase – Thảo Luận & Bỏ Phiếu
+3.1 Khởi Động Phiên Dispute
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+Nếu valid → chuyển sang Dispute Phase.
+3. Dispute Phase – Thảo Luận & Bỏ Phiếu
+3.1 Khởi Động Phiên Dispute
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+    </div>
+    <div id="lop"  class="op">
+    <a href="https://youtube.com" target="_blank"><img src="PICTURE/W.png" id="main" height="150px"></a>
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Ngay khi báo cáo được xác thực, hệ thống tự động mở phiên DAO Dispute; không cần thêm bước initiate.
+3.2 Thời Gian Toàn Quy Trình
+Bài vĩnh viễn: tổng thời gian cho Discussion + Voting 3 giờ kể từ khi report valid.
+Bài tồn tại 24h: tổng thời gian cho Discussion + Voting 2 giờ kể từ khi report valid.
+3.3 Chi Tiết Hoạt Động
+Discussion
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+
+Mọi user (token holder & non-token holder) có thể bình luận, tranh luận.
+Thread công khai, hỗ trợ upvote/like bình luận để nổi bật ý kiến.
+Voting
+Token holder vote weight = VSF balance.
+Non-token holder stake tối đa 10 VSF từ pool custodial để vote.
+Mỗi user chỉ vote một lần (Keep/Remove), ẩn kết quả đến khi hết thời gian.
+Kết Thúc
+Hết 2h/3h → hệ thống tổng hợp vote:
+Nếu Keep ≥ Delete → Giữ nguyên nội dung.
+Nếu Delete > Keep → Xóa vĩnh viễn nội dung
+    </div>
+</main>
+<footer>
+    <pre><biG>
+        author: Châu Hoàng Phú<br>
+        22/7/2025 (Việt Nam)<br>
+        &copy; copyright reserved<br>
+        <a href="mailto:nq19.chauhoangphu020804@gmail.com">nq19.chauhoangphu020804@gmail.com</a>
+    </biG></pre>
+</footer>
+</body>
+</html>

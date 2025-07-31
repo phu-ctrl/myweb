@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice pages</title>
+        <link href="PICTURE/practice.jpg" rel="icon"  >
+        <link rel="stylesheet" href="full.css">
+    </head>
+    <body>
+<header>
+    <h1>This is my practice website</h1>
+    <b><biG><a href="https://docs.google.com/document/d/1L3NG4nuGcjPj5GkhFA_zgH0X-Om8eIgFMiMwLTov7Mo/edit?tab=t.0" target="_blank">Tự sự 1</a></b></biG><br>
+    <b><biG><a href="https://docs.google.com/document/d/1Hjhk3JzC4yD1PRNmvNly461Vhtkod5Z_-P_-Q4MieAQ/edit?tab=t.0" target="_blank">Tự sự 2</a></b></biG><br>
+    <b><biG><a href="https://docs.google.com/document/d/16dIKO_TGH05w-GbJSeVtwo7RyV_QfHSIzKyQ3MeLHZU/edit?tab=t.0" target="_blank">Tự sự 3</a></b></biG><br>
+    <b><biG><a href="https://docs.google.com/document/d/1zZ_GXGBzdVFjo6lXpMYrRMipHoRzoUxqjm6QpSsghu4/edit?tab=t.0" target="_blank">Tự sự 4</a></b></biG><br>
+    <b><biG><a href="https://docs.google.com/document/d/1wLmj16cETeXfEHjPoYWxC-lcqFrVjL4GVuAa6opI91M/edit?tab=t.0" target="_blank">Tự sự 5</a></b></biG><br>
+</header>
+<hr>
+<main>
+        <!-- <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <u>underlined</u> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>subscript</sub> text</p>
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <tt>monospaced</tt> text</p>
+        <p>This is <mark style="background-color: seagreen;">normal</mark> text</p>
+        <pre><span style="background-color: aquamarine;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+Eum rerum consectetur molestias expedita soluta reprehenderit commodi placeat accusamus natus debitis, inventor
+e praesentium nihil quae, molestiae ullam amet odio exercitationem neque.</span></pre>
+        <pre><div style="background-color: blueviolet;">ipsum dolor sit amet consectetur adipisicing elit. Corporis quae 
+temporibus dolor blanditiis ipsam! Facilis libero et debitis corporis, eum reprehenderit omnis animi ratione
+nesciunt sint, earum dolorem. Ipsam, neque?</div></pre> -->
+    
+     <!-- Ví dụ về table -->   
+    <h3>Exercise schedule</h3>
+    <table border="1" style="background-color:aquamarine; "> 
+        <!-- border: độ dày của viền -->
+        <tr style="background-color: cornflowerblue;  ">
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+            <th width="100">Sunday</th>
+        </tr>
+        <tr align = "center" style="background-color: crimson;">
+            <td>Practice</td>
+            <td>Practice</td>
+            <td>Practice</td>
+            <td>Practice</td>
+            <td>Practice</td>
+            <td>Practice</td>
+            <td>Off day</td>
+        </tr>
+    <!-- ví dụ về button(nút)  -->
+    </table>
+    <br><hr>
+    <!-- Nếu Không để <button></button> trong <a></a> thì khi click vào button sẽ không tạo thành liên kết -->
+        <a href="http://127.0.0.1:5500/VeSaFre.html"
+        target="_blank" rel="noopener">
+            <button>
+                <!-- background-color: màu nền ; color: màu chữ ; font-size: size chữ;  border-radius:kiểu viền (...px : kích thước) -->
+                <b><i>CLICK HERE IF YOU WANT TO GO VESAFRE'S OFFICIAL WEBSITE</b></i>
+            </button>
+        </a>
+    <br><hr>
+        <a href="http://127.0.0.1:5500/VeScoFre.html" target="_blank">
+        <button style="background-color: aquamarine; color:rgb(0, 177, 201); font-size: 25px; border-radius: 30px;"> Nhấn vào đây để đến hệ sinh thái VeScoFre </button>
+        <!-- <button> trên không bị ảnh hưởng bởi CSS do được khai báo "style" trực tiếp  -->
+        </a>
+        <br><hr>
+    <!-- còn ví dụ phía dưới button mang chức năng là thay đổi văn bản nên không cần gán liên kết <a></a>  vào button-->
+            <button onclick="doSomething()">
+                <!-- Phải gán "onclick=tên hàm()" vào để khi nhấn sẽ gọi hàm để thực hiện thao tác -->
+                <!-- background-color: màu nền ; color: màu chữ ; font-size: size chữ;  border-radius:kiểu viền (...px : kích thước) -->
+                <b><i>CLICK HERE </b></i>
+            </button>
+            <h1 id="ok">HELLO</h1>
+            <script>
+                function doSomething(){
+                    document.getElementById("ok").innerHTML="GOOD BYE";
+                }
+            </script>
+    <hr><br>
+    <!--ví dụ về tạo form(biểu mẫu) -->
+    <!--style="background-color: aquamarine; border-radius: 25px"-->
+    <form  action="index.php" method="POST" >
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="Enter your username" minlength="6" maxlength="9" required>
+        <label for="password">password:</label>
+        <input type="password" id="password"placeholder="Enter your password" required>
+        <br><br>
+        <label for="email">email:</label>
+        <input type="tel" id="email"placeholder=".....................@gmail.com" required>
+        <br><br>
+        <label for="phone">phone number:</label>
+        <input type="tel" id="phone" placeholder="0xxx-xxx-xxx"  required>
+        <br><br>
+        <label for="bday">birthday:</label>
+        <input type="date" id="bday">
+        <br><br>
+        <label for="quantity">Số lượng:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"> <!-- value để set giá trị mặc định; min là giá trị nhỏ nhất có thể giảm trong bảng; max là giá trị lớn nhất -->
+        <br><br>
+        <label for="Giới tính">Giới tính:</label>
+        <label for="Nam">Nam</label>
+        <input type="radio" id="Nam" value="Nam" name="Giới tính"> <!-- name để gán giá trị cho thuộc tính nếu muốn người dùng chọn 1 thứ đại diện cho thuộc tính ấy -->
+        <label for="Nữ">Nữ</label>
+        <input type="radio" id="Nữ" value="Nữ" name="Giới tính">
+        <br><br>
+        <label for="payment">Thanh toán:</label>
+        <select id="payment">
+            <option value="cash">Tiền mặt khi nhận hàng</option>
+            <option value="banking">Chuyển khoản qua ngân hàng</option>
+            <option value="Visa">Quẹt thẻ tại ứng dụng Visa</option>
+        </select>
+        <br><br>
+        <label for="HV">Bạn là hội viên</label>
+        <input type="checkbox" id="HV">
+        <br><br>
+        <label for="Note">Ghi chú về sản phẩm:</label>
+        <textarea id="Note" rows="3" cols="25"></textarea>
+        <br><br>
+        <label for="file">Chọn ảnh đại diện: </label>
+        <input type="file" id="file" accept="image/png, image/jpeg, image/jpg ">
+        <br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    </body>
+</main>
+<br><hr>
+<footer>
+        <pre><biG>
+                author: Châu Hoàng Phú<br>
+                22/7/2025 (Việt Nam)<br>
+                &copy; copyright reserved<br>
+                <a href="mailto:nq19.chauhoangphu020804@gmail.com">nq19.chauhoangphu020804@gmail.com</a>
+        </biG></pre>
+</footer>
+</html>

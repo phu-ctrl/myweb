@@ -1,0 +1,56 @@
+#title{
+    text-align: center;
+    background-color: rgba(28, 170, 196, 0.582);
+    border-radius: 10px;
+    padding:5px;
+    backdrop-filter: blur(5px);
+}
+body{
+    background-image: url(PICTURE/B.png);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgba(226, 222, 5, 0.918);
+}
+.page a{
+    background-color: rgba(255, 0, 0, 0.527);
+    color: rgba(207, 221, 6, 0.733);
+    box-shadow: 4px 4px 6px rgba(233, 210, 2, 0.815),-4px -4px 6px rgba(99, 241, 4, 0.575);
+}
+.page a:hover{
+    background-color: rgba(7, 99, 4, 0.527);
+    color: rgba(207, 221, 6, 0.733);
+    box-shadow: 4px 4px 6px rgba(4, 196, 62, 0.815),-4px -4px 6px rgba(3, 102, 53, 0.74);
+    font-weight: bolder;
+}
+.page a.tc{
+    background-color: rgba(228, 205, 3, 0.753);
+    color: rgb(252, 52, 2);
+    box-shadow: 4px 4px 6px rgba(233, 68, 2, 0.815),-4px -4px 6px rgba(146, 235, 3, 0.671);
+}
+footer{
+    color:rgba(221, 38, 6, 0.884);
+}
+.menu button{
+    background-color: rgba(255, 0, 0, 0.527);
+    color: rgba(207, 221, 6, 0.733);
+    box-shadow: 4px 4px 6px rgba(233, 210, 2, 0.815),-4px -4px 6px rgba(99, 241, 4, 0.575);
+}
+.menu button:hover{
+    background-color: rgba(7, 99, 4, 0.527);
+    color: rgba(207, 221, 6, 0.733);
+    box-shadow: 4px 4px 6px rgba(4, 196, 62, 0.815),-4px -4px 6px rgba(3, 102, 53, 0.74);
+}
+.menu a{
+    background-color: rgba(255, 0, 0, 0.527);
+    color: rgba(207, 221, 6, 0.733);
+}
+.menu a:hover{
+    background-color: rgba(7, 99, 4, 0.527);
+    color: rgba(207, 221, 6, 0.733);
+} 
+.menu a.tc{
+    background-color: rgba(228, 205, 3, 0.753);
+    color: rgb(252, 52, 2);
+}
