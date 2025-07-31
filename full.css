@@ -12,6 +12,11 @@
     font-weight: bolder;
     transition: background-color 1s ease, box-shadow 2s ease;
 }
+body {
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
 .page a.tc{
     font-size: xx-large;
 }
