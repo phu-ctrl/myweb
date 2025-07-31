@@ -75,7 +75,11 @@ main{
 }
 .loginbox input:focus~label,
 .loginbox input:valid~label{
+<<<<<<< HEAD
   top: -27px;
+=======
+  top: -25px;
+>>>>>>> 23eb61624aeb3ae28caaf8ae1b392a83f9d00ef2
 }
 .loginbox i{
     position: absolute;
